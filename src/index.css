@@ -14,6 +14,7 @@
 
 .content_container{
    width: 75%;
+   transition: all 0.3s all ease-in-out;
 }
 
 header{
@@ -111,16 +112,40 @@ a{
 
 li{
     list-style-type: none;
-    border: 1px solid gray;
+    /* border: 1px solid gray; */
     padding: 0.4em 0.8em;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
 }
 
-li:hover{
+/* li:hover{
     background-color: rgb(164, 169, 173);
-}
+} */
 
 /* .css-i4bv87-MuiSvgIcon-root{
     font-size: 2.5em !important;
 } */
+
+@media only screen and (max-width: 800px){
+    *{
+        font-size: 13px;
+    }
+    header h1{
+        font-size: 22px;
+    }
+
+    li{
+        border: none;
+        padding: 0 !important;
+    }
+    .content_container{
+        width: 100%;
+        padding: 0 1em;
+     }
+
+     .user_box{
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+     }
+}
